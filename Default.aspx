@@ -23,7 +23,7 @@
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <span class="glyphicon glyphicon-plus-sign"></span> Add Complaint
+                                Add Complaint
                             </div>
                         </div>
                         <img src="img/portfolio/add.png" class="img-responsive" alt="Add">
@@ -33,7 +33,7 @@
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <span class="glyphicon glyphicon-search"></span> Track Complaint
+                                Track Complaint
                             </div>
                         </div>
                         <img src="img/portfolio/track.png" class="img-responsive" alt="Track">
@@ -43,7 +43,7 @@
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                               <span class="glyphicon glyphicon-th-list"></span> All Complaints
+                               All Complaints
                             </div>
                         </div>
                         <img src="img/portfolio/all.png" class="img-responsive" alt="List">
