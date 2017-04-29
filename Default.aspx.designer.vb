@@ -12,4 +12,22 @@ Option Explicit On
 
 
 Partial Public Class _Default
+
+    '''<summary>
+    '''txtEmpno control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtEmpno As Global.System.Web.UI.HtmlControls.HtmlInputText
+
+    '''<summary>
+    '''txtName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtName As Global.System.Web.UI.HtmlControls.HtmlInputText
 End Class

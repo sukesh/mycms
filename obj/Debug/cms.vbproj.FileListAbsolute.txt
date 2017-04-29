@@ -6,3 +6,11 @@ E:\MS\cms\obj\Debug\cms.vbproj.GenerateResource.Cache
 E:\MS\cms\obj\Debug\cms.dll
 E:\MS\cms\obj\Debug\cms.xml
 E:\MS\cms\obj\Debug\cms.pdb
+D:\Practice\cms\bin\cms.dll
+D:\Practice\cms\bin\cms.pdb
+D:\Practice\cms\bin\cms.xml
+D:\Practice\cms\obj\Debug\cms.Resources.resources
+D:\Practice\cms\obj\Debug\cms.vbproj.GenerateResource.Cache
+D:\Practice\cms\obj\Debug\cms.dll
+D:\Practice\cms\obj\Debug\cms.xml
+D:\Practice\cms\obj\Debug\cms.pdb
