@@ -65,6 +65,7 @@
             </div>
             <div class="container">
                 <div class="row">
+                    <hr />
                     <div class="col-lg-12 text-center">
                         <h2>
                             Add Complaint</h2>
