@@ -26,7 +26,7 @@
                                 <span class="glyphicon glyphicon-plus-sign"></span> Add Complaint
                             </div>
                         </div>
-                        <img src="img/portfolio/add.png" class="img-responsive" alt="Cabin">
+                        <img src="img/portfolio/add.png" class="img-responsive" alt="Add">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -36,7 +36,7 @@
                                 <span class="glyphicon glyphicon-search"></span> Track Complaint
                             </div>
                         </div>
-                        <img src="img/portfolio/track.png" class="img-responsive" alt="Slice of cake">
+                        <img src="img/portfolio/track.png" class="img-responsive" alt="Track">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -46,7 +46,7 @@
                                <span class="glyphicon glyphicon-th-list"></span> All Complaints
                             </div>
                         </div>
-                        <img src="img/portfolio/all.png" class="img-responsive" alt="Circus tent">
+                        <img src="img/portfolio/all.png" class="img-responsive" alt="List">
                     </a>
                 </div>                
             </div>
