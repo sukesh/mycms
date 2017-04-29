@@ -1,0 +1,8 @@
+E:\MS\cms\bin\cms.dll
+E:\MS\cms\bin\cms.pdb
+E:\MS\cms\bin\cms.xml
+E:\MS\cms\obj\Debug\cms.Resources.resources
+E:\MS\cms\obj\Debug\cms.vbproj.GenerateResource.Cache
+E:\MS\cms\obj\Debug\cms.dll
+E:\MS\cms\obj\Debug\cms.xml
+E:\MS\cms\obj\Debug\cms.pdb
