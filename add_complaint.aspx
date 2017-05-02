@@ -185,8 +185,9 @@
                         </div>
                         <div class="row control-group">
                             <div class="radio radiobuttonlist form-group col-xs-12 controls">
-                                <asp:RadioButtonList ID="rblPublicQuarter" CssClass="rbl" runat="server" RepeatDirection="Vertical"
-                                    required data-validation-required-message="Select Complaint Area" RepeatLayout="Table">
+                                <asp:RadioButtonList ID="rblPublicQuarter" CssClass="rbl" AutoPostBack="true" runat="server"
+                                    RepeatDirection="Vertical" required data-validation-required-message="Select Complaint Area"
+                                    RepeatLayout="Table">
                                     <asp:ListItem Text="Quarter" Value="Q"></asp:ListItem>
                                     <asp:ListItem Text="Public Building" Value="P"></asp:ListItem>
                                 </asp:RadioButtonList>
@@ -196,17 +197,19 @@
                         </div>
                         <hr style="margin: 4px" />
                         <div runat="server" id="div_quarter_address" visible="false" class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <div class="form-group col-xs-6 floating-label-form-group controls">
                                 <label for="Sector">
                                     Sector</label>
-                                <input type="text" class="form-control" runat="server" placeholder="Sector" id="txtSector">
+                                <asp:TextBox runat="server" CssClass="form-control" placeholder="Sector" ID="txtSector"
+                                    TextMode="Number" MaxLength="2"></asp:TextBox>
                                 <p class="help-block text-danger">
                                 </p>
                             </div>
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <div class="form-group col-xs-6 floating-label-form-group controls">
                                 <label for="Quarter">
                                     Quarter</label>
-                                <input type="text" class="form-control" runat="server" placeholder="Quarter" id="txtQuarter">
+                                <asp:TextBox runat="server" CssClass="form-control" placeholder="Quarter" ID="txtQuarter"
+                                    TextMode="Number" MaxLength="3"></asp:TextBox>
                                 <p class="help-block text-danger">
                                 </p>
                             </div>

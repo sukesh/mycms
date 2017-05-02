@@ -119,7 +119,7 @@ Partial Public Class add_complaint
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtSector As Global.System.Web.UI.HtmlControls.HtmlInputText
+    Protected WithEvents txtSector As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''txtQuarter control.
@@ -128,7 +128,7 @@ Partial Public Class add_complaint
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtQuarter As Global.System.Web.UI.HtmlControls.HtmlInputText
+    Protected WithEvents txtQuarter As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''div_publicbuilding control.

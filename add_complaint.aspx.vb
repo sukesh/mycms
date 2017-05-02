@@ -117,6 +117,20 @@ Public Class add_complaint
             ScriptManager.RegisterStartupScript(Me, Page.[GetType](), "201402190959", "alert('" & ex.Message & "')", True)
         End Try
     End Sub
+
+    Protected Sub rblPublicQuarter_oNchange(ByVal sender As Object, ByVal e As EventArgs) Handles rblPublicQuarter.SelectedIndexChanged
+        Try
+            If rblPublicQuarter.Items(0).Selected Then
+                div_quarter_address.Visible = True
+                div_publicbuilding.Visible = False
+            Else
+                div_quarter_address.Visible = False
+                div_publicbuilding.Visible = True
+            End If
+        Catch ex As Exception
+            ScriptManager.RegisterStartupScript(Me, Page.[GetType](), "201402190959", "alert('" & ex.Message & "')", True)
+        End Try
+    End Sub
 #End Region
 
 End Class
