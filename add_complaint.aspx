@@ -200,16 +200,14 @@
                             <div class="form-group col-xs-6 floating-label-form-group controls">
                                 <label for="Sector">
                                     Sector</label>
-                                <asp:TextBox runat="server" CssClass="form-control" placeholder="Sector" ID="txtSector"
-                                    TextMode="Number" MaxLength="2"></asp:TextBox>
+                                <asp:TextBox runat="server" CssClass="form-control" placeholder="Sector" ID="txtSector"></asp:TextBox>
                                 <p class="help-block text-danger">
                                 </p>
                             </div>
                             <div class="form-group col-xs-6 floating-label-form-group controls">
                                 <label for="Quarter">
                                     Quarter</label>
-                                <asp:TextBox runat="server" CssClass="form-control" placeholder="Quarter" ID="txtQuarter"
-                                    TextMode="Number" MaxLength="3"></asp:TextBox>
+                                <asp:TextBox runat="server" CssClass="form-control" placeholder="Quarter" ID="txtQuarter"></asp:TextBox>
                                 <p class="help-block text-danger">
                                 </p>
                             </div>
