@@ -104,6 +104,51 @@ Partial Public Class add_complaint
     Protected WithEvents rblPublicQuarter As Global.System.Web.UI.WebControls.RadioButtonList
 
     '''<summary>
+    '''div_quarter_address control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents div_quarter_address As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''txtSector control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtSector As Global.System.Web.UI.HtmlControls.HtmlInputText
+
+    '''<summary>
+    '''txtQuarter control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtQuarter As Global.System.Web.UI.HtmlControls.HtmlInputText
+
+    '''<summary>
+    '''div_publicbuilding control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents div_publicbuilding As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''ddlPublicBuilding control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlPublicBuilding As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
     '''sdServices control.
     '''</summary>
     '''<remarks>

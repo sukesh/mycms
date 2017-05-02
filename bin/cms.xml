@@ -103,6 +103,62 @@ ddlSubCategory control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:cms.add_complaint.ddlAreaType">
+	<summary>
+ddlAreaType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.add_complaint.rblPublicQuarter">
+	<summary>
+rblPublicQuarter control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.add_complaint.div_quarter_address">
+	<summary>
+div_quarter_address control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.add_complaint.txtSector">
+	<summary>
+txtSector control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.add_complaint.txtQuarter">
+	<summary>
+txtQuarter control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.add_complaint.div_publicbuilding">
+	<summary>
+div_publicbuilding control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.add_complaint.ddlPublicBuilding">
+	<summary>
+ddlPublicBuilding control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:cms.add_complaint.sdServices">
 	<summary>
 sdServices control.

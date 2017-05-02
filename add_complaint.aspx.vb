@@ -96,6 +96,27 @@ Public Class add_complaint
             ScriptManager.RegisterStartupScript(Me, Page.[GetType](), "201402190959", "alert('" & ex.Message & "')", True)
         End Try
     End Sub
+
+    Protected Sub ddlAreaType_oNchange(ByVal sender As Object, ByVal e As EventArgs) Handles ddlAreaType.SelectedIndexChanged
+        Try
+            If ddlAreaType.SelectedIndex > 0 Then
+                If ddlAreaType.SelectedValue = "TOWNSHIP" Then
+                    rblPublicQuarter.Items(0).Selected = True
+                    div_quarter_address.Visible = True
+                    div_publicbuilding.Visible = False
+                Else
+                    rblPublicQuarter.ClearSelection()
+                    rblPublicQuarter.Items(0).Selected = False
+                    div_quarter_address.Visible = False
+                    div_publicbuilding.Visible = True
+                End If
+            Else
+                Throw New Exception("Please Select Complaint Area Type !!")
+            End If
+        Catch ex As Exception
+            ScriptManager.RegisterStartupScript(Me, Page.[GetType](), "201402190959", "alert('" & ex.Message & "')", True)
+        End Try
+    End Sub
 #End Region
 
 End Class
