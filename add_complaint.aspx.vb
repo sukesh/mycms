@@ -18,7 +18,7 @@ Public Class add_complaint
     Protected Sub BindServices()
         Try
             Dim str As String = String.Empty
-            str = "select '-- Select Complaint Category --' txt , 0 val  union select service_name txt,service_no val from m_services order by val"
+            str = "select '-- Select Complaint Category --' txt , 0 val  union select distinct service_name txt,service_no val from m_services order by val"
             sdServices.SelectCommand = str
         Catch ex As Exception
             ScriptManager.RegisterStartupScript(Me, Page.[GetType](), "201402190959", "alert('" & ex.Message & "')", True)
@@ -29,11 +29,21 @@ Public Class add_complaint
         Try
             Dim str As String = String.Empty
             If String.IsNullOrEmpty(service_no) Then
-                str = "select '-- Select Sub Category --' txt , 0 val  union select service_cat_name txt,service_cat_no val from m_services order by val"
+                str = "select '-- Select Sub Category --' txt , 0 val  union select distinct service_cat_name txt,service_cat_no val from m_services order by val"
             Else
-                str = "select '-- Select Sub Category --' txt , 0 val  union select service_cat_name txt,service_cat_no val from m_services where service_no=" & service_no & "order by val"
+                str = "select '-- Select Sub Category --' txt , 0 val  union select distinct service_cat_name txt,service_cat_no val from m_services where service_no=" & service_no & "order by val"
             End If
             sdSubCategory.SelectCommand = str
+        Catch ex As Exception
+            ScriptManager.RegisterStartupScript(Me, Page.[GetType](), "201402190959", "alert('" & ex.Message & "')", True)
+        End Try
+    End Sub
+
+    Protected Sub BindPublicBuildings()
+        Try
+            Dim str As String = String.Empty
+            str = "select '-- Select Public Building --' txt , 0 val  union select distinct pb_name txt,pb_no val from m_public_buildings order by val"
+            sdPublicBuildings.SelectCommand = str
         Catch ex As Exception
             ScriptManager.RegisterStartupScript(Me, Page.[GetType](), "201402190959", "alert('" & ex.Message & "')", True)
         End Try
@@ -109,6 +119,8 @@ Public Class add_complaint
                     rblPublicQuarter.Items(0).Selected = False
                     div_quarter_address.Visible = False
                     div_publicbuilding.Visible = True
+                    BindPublicBuildings()
+                    ddlPublicBuilding.DataBind()
                 End If
             Else
                 Throw New Exception("Please Select Complaint Area Type !!")
@@ -126,6 +138,8 @@ Public Class add_complaint
             Else
                 div_quarter_address.Visible = False
                 div_publicbuilding.Visible = True
+                BindPublicBuildings()
+                ddlPublicBuilding.DataBind()
             End If
         Catch ex As Exception
             ScriptManager.RegisterStartupScript(Me, Page.[GetType](), "201402190959", "alert('" & ex.Message & "')", True)

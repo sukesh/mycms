@@ -220,7 +220,7 @@
                                     Public Building</label>
                                 <asp:DropDownList runat="server" ID="ddlPublicBuilding" Style="margin-top: 20px;
                                     line-height: 3em; text-transform: lowercase" required data-validation-required-message="Select Complaint Sub Category"
-                                    DataTextField="TXT" DataValueField="VAL" CssClass="form-control" DataSourceID="sdSubCategory">
+                                    DataTextField="TXT" DataValueField="VAL" CssClass="form-control" DataSourceID="sdPublicBuildings">
                                 </asp:DropDownList>
                                 <p class="help-block text-danger">
                                 </p>
@@ -263,5 +263,7 @@
     <asp:SqlDataSource ID="sdServices" runat="server" ConnectionString="<%$ ConnectionStrings:apphb %>">
     </asp:SqlDataSource>
     <asp:SqlDataSource ID="sdSubCategory" runat="server" ConnectionString="<%$ ConnectionStrings:apphb %>">
+    </asp:SqlDataSource>
+    <asp:SqlDataSource ID="sdPublicBuildings" runat="server" ConnectionString="<%$ ConnectionStrings:apphb %>">
     </asp:SqlDataSource>
 </asp:Content>

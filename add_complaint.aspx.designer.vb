@@ -165,4 +165,13 @@ Partial Public Class add_complaint
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents sdSubCategory As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''sdPublicBuildings control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents sdPublicBuildings As Global.System.Web.UI.WebControls.SqlDataSource
 End Class
