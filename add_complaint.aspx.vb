@@ -40,11 +40,55 @@ Public Class add_complaint
     End Sub
 #End Region
 
+#Region "Database Fucntions"
+    Protected Function GetCatNoFromSubCatNo(ByVal subcat_no As String) As String
+        Dim cat_no As String = String.Empty
+        Dim sqlcon As SqlConnection = New SqlConnection()
+        Dim dr As SqlDataReader = Nothing
+        Try
+            sqlcon.ConnectionString = constr
+            sqlcon.Open()
+            Using cmd As New SqlCommand
+                cmd.Connection = sqlcon
+                cmd.CommandText = "select distinct service_no from m_services where service_cat_no=" & subcat_no
+                dr = cmd.ExecuteReader()
+                If dr.Read() Then
+                    cat_no = Convert.ToString(dr.GetValue(0))
+                End If
+            End Using
+        Catch ex As Exception
+
+        Finally
+            If sqlcon.State = ConnectionState.Open Then
+                sqlcon.Close()
+            End If
+        End Try
+        Return cat_no
+    End Function
+#End Region
+
 #Region "Postback"
     Protected Sub ddlService_oNchange(ByVal sender As Object, ByVal e As EventArgs) Handles ddlServiceType.SelectedIndexChanged
         Try
             If ddlServiceType.SelectedIndex > 0 Then
                 BindSubCategories(ddlServiceType.SelectedValue)
+            Else
+                Throw New Exception("Please Select Complaint Category !!")
+            End If
+        Catch ex As Exception
+            ScriptManager.RegisterStartupScript(Me, Page.[GetType](), "201402190959", "alert('" & ex.Message & "')", True)
+        End Try
+    End Sub
+    Protected Sub ddlSubCategory_oNchange(ByVal sender As Object, ByVal e As EventArgs) Handles ddlSubCategory.SelectedIndexChanged
+        Try
+            If ddlSubCategory.SelectedIndex > 0 Then
+                Dim subcat_no As String = ddlSubCategory.SelectedValue
+                Dim cat_no As String = GetCatNoFromSubCatNo(subcat_no)
+                If Not String.IsNullOrEmpty(cat_no) Then
+                    If ddlServiceType.Items.FindByValue(cat_no) IsNot Nothing Then
+                        ddlServiceType.SelectedValue = cat_no
+                    End If
+                End If
             Else
                 Throw New Exception("Please Select Complaint Category !!")
             End If

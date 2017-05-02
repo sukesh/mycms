@@ -86,6 +86,24 @@ Partial Public Class add_complaint
     Protected WithEvents ddlSubCategory As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''ddlAreaType control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlAreaType As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''rblPublicQuarter control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rblPublicQuarter As Global.System.Web.UI.WebControls.RadioButtonList
+
+    '''<summary>
     '''sdServices control.
     '''</summary>
     '''<remarks>

@@ -73,6 +73,10 @@
             opacity: 0.7;
             xindex: -1;
         }
+        .rbl td
+        {
+            padding: 4px 20px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -125,7 +129,7 @@
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="employee no">
                                     Employee No</label>
-                                <input type="text" class="form-control" runat="server" placeholder="Employee No"
+                                <input type="text" pattern="\d*" class="form-control" runat="server" placeholder="Employee No"
                                     id="txtEmpno" required data-validation-required-message="Enter Employee No">
                                 <p class="help-block text-danger">
                                 </p>
@@ -164,6 +168,33 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="area_type">
+                                </label>
+                                <asp:DropDownList runat="server" ID="ddlAreaType" CssClass="form-control" AutoPostBack="true"
+                                    Style="margin-top: 20px; line-height: 3em;" required data-validation-required-message="Select Complaint Area">
+                                    <asp:ListItem Text="-- Select Complaint Area --" Value="X"></asp:ListItem>
+                                    <asp:ListItem Text="Township Area" Value="TOWNSHIP"></asp:ListItem>
+                                    <asp:ListItem Text="Battery Area" Value="BA"></asp:ListItem>
+                                    <asp:ListItem Text="Admin Building" Value="ADMIN"></asp:ListItem>
+                                </asp:DropDownList>
+                                <p class="help-block text-danger">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="radio radiobuttonlist form-group col-xs-12 controls">
+                                <asp:RadioButtonList ID="rblPublicQuarter" CssClass="rbl" runat="server" RepeatDirection="Vertical"
+                                    required data-validation-required-message="Select Complaint Area" RepeatLayout="Table">
+                                    <asp:ListItem Text="Quarter" Value="Q"></asp:ListItem>
+                                    <asp:ListItem Text="Public Building" Value="P"></asp:ListItem>                                    
+                                </asp:RadioButtonList>
+                                <p class="help-block text-danger">
+                                </p>
+                            </div>
+                        </div>
+                        <hr style="margin: 4px" />
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="phone">
