@@ -98,9 +98,21 @@
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label for="Category">
                         </label>
-                        <asp:DropDownList runat="server" ID="ddlServiceType" Style="margin-top: 20px" required
-                            data-validation-required-message="Select Complaint Category" DataTextField="TXT"
-                            DataValueField="VAL" CssClass="form-control" DataSourceID="sdServices">
+                        <asp:DropDownList runat="server" ID="ddlServiceType" AutoPostBack="true" Style="margin-top: 20px;
+                            line-height: 3em; text-transform: lowercase" required data-validation-required-message="Select Complaint Category"
+                            DataTextField="TXT" DataValueField="VAL" CssClass="form-control" DataSourceID="sdServices">
+                        </asp:DropDownList>
+                        <p class="help-block text-danger">
+                        </p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label for="Sub-Category">
+                        </label>
+                        <asp:DropDownList runat="server" ID="ddlSubCategory" AutoPostBack="true" Style="margin-top: 20px;
+                            line-height: 3em; text-transform: lowercase" required data-validation-required-message="Select Complaint Sub Category"
+                            DataTextField="TXT" DataValueField="VAL" CssClass="form-control" DataSourceID="sdSubCategory">
                         </asp:DropDownList>
                         <p class="help-block text-danger">
                         </p>
@@ -139,5 +151,7 @@
         </div>
     </div>
     <asp:SqlDataSource ID="sdServices" runat="server" ConnectionString="<%$ ConnectionStrings:apphb %>">
+    </asp:SqlDataSource>
+    <asp:SqlDataSource ID="sdSubCategory" runat="server" ConnectionString="<%$ ConnectionStrings:apphb %>">
     </asp:SqlDataSource>
 </asp:Content>

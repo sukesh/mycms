@@ -41,6 +41,15 @@ Partial Public Class add_complaint
     Protected WithEvents ddlServiceType As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''ddlSubCategory control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlSubCategory As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
     '''sdServices control.
     '''</summary>
     '''<remarks>
@@ -48,4 +57,13 @@ Partial Public Class add_complaint
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents sdServices As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''sdSubCategory control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents sdSubCategory As Global.System.Web.UI.WebControls.SqlDataSource
 End Class
