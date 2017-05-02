@@ -6,7 +6,39 @@ cms
 </name>
 </assembly>
 <members>
-<member name="P:cms.My.MyWebExtension.Application">
+<member name="F:cms.add_complaint.txtEmpno">
+	<summary>
+txtEmpno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.add_complaint.txtName">
+	<summary>
+txtName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.add_complaint.ddlServiceType">
+	<summary>
+ddlServiceType control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.add_complaint.sdServices">
+	<summary>
+sdServices control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:cms.My.MyWebExtension.Application">
 	<summary>
  Returns information about the current application.
  </summary>
@@ -58,6 +90,22 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:cms.ms.ContentPlaceHolder1">
 	<summary>
 ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms._Default.txtEmpno">
+	<summary>
+txtEmpno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms._Default.txtName">
+	<summary>
+txtName control.
 </summary>
 	<remarks>
 Auto-generated field.

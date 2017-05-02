@@ -20,7 +20,7 @@
         <div class="container">            
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="add_complaint.aspx" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 Add Complaint
