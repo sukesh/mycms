@@ -30,7 +30,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="track_complaint.aspx" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 Track Complaint

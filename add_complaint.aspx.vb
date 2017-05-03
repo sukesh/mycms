@@ -180,7 +180,8 @@ Public Class add_complaint
                                     str = cc.Insert_Complaint(empno, name, service_no, service_cat_no, complaint_desc, status, area_type, sector, quarter, quarter_public, pb_no, mobile_no, ofc_phone, res_phone)
                                     If String.IsNullOrEmpty(str(0)) Then
                                         If IsNumeric(str(1)) Then
-                                            ScriptManager.RegisterStartupScript(Me, Page.[GetType](), DateTime.Now.Ticks.ToString(), "alert('Your Complaint No : " & str(1) & " Added Successfully!!');window.location.href='add_complaint.aspx'", True)
+                                            Session("ms_view_comp_no") = str(1)
+                                            ScriptManager.RegisterStartupScript(Me, Page.[GetType](), DateTime.Now.Ticks.ToString(), "alert('Your Complaint No : " & str(1) & " Added Successfully!!');window.location.href='view_complaint.aspx'", True)
                                         End If
                                     Else
                                         ScriptManager.RegisterStartupScript(Me, Page.[GetType](), DateTime.Now.Ticks.ToString(), "alert('Oops! Something went wrong..')", True)

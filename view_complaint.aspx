@@ -1,6 +1,4 @@
-﻿<%@ Page Title="My Complaints" Language="vb" AutoEventWireup="false" MasterPageFile="~/ms.Master"
-    CodeBehind="my_complaints.aspx.vb" Inherits="cms.my_complaints" %>
-
+﻿<%@ Page Title="View Complaint" Language="vb" AutoEventWireup="false" MasterPageFile="~/ms.Master" CodeBehind="view_complaint.aspx.vb" Inherits="cms.view_complaint" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
@@ -52,15 +50,15 @@
         <ContentTemplate>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
+                    <div align="left" class="col-lg-12 text-center">
                         <h2>
-                            My Complaints</h2>
+                            Your Complaint</h2>
                     </div>
                 </div>
                 <div class="row">
                     <asp:Repeater ID="rptMyComplaints" runat="server" DataSourceID="sdMyComplaints">
                         <ItemTemplate>
-                            <ul class="list-group col-sm-6">
+                            <ul class="list-group">
                                 <li class="list-group-item active"><b>Complaint # <br/> </b>
                                     <%# Eval("comp_no") %></li>
                                 <li class="list-group-item"><b>Employee No <br/> </b>
@@ -71,7 +69,7 @@
                                     <%# Eval("service_cat_name") %></li>
                                 <li class="list-group-item"><b>Area <br/> </b>
                                     <%# Eval("area")%></li>
-                                <li class="list-group-item"><b>Location <br/> </b>
+                                <li class="list-group-item"><b>Address <br/> </b>
                                     <%# Eval("address")%></li>
                                 <li class="list-group-item"><b>Complaint Date <br/> </b>
                                     <%# Eval("comp_dt")%></li>

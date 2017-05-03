@@ -6,7 +6,127 @@ cms
 </name>
 </assembly>
 <members>
-<member name="F:cms.my_complaints.sc">
+<member name="F:cms.track_complaint.sc">
+	<summary>
+sc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.track_complaint.UpdateProgress">
+	<summary>
+UpdateProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.track_complaint.modalPopup">
+	<summary>
+modalPopup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.track_complaint.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.track_complaint.txtCompNo">
+	<summary>
+txtCompNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.track_complaint.btnSubmit">
+	<summary>
+btnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.track_complaint.sdServices">
+	<summary>
+sdServices control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.track_complaint.sdSubCategory">
+	<summary>
+sdSubCategory control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.track_complaint.sdPublicBuildings">
+	<summary>
+sdPublicBuildings control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.view_complaint.sc">
+	<summary>
+sc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.view_complaint.UpdateProgress">
+	<summary>
+UpdateProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.view_complaint.modalPopup">
+	<summary>
+modalPopup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.view_complaint.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.view_complaint.rptMyComplaints">
+	<summary>
+rptMyComplaints control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.view_complaint.sdMyComplaints">
+	<summary>
+sdMyComplaints control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.my_complaints.sc">
 	<summary>
 sc control.
 </summary>

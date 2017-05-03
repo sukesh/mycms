@@ -122,6 +122,8 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\toastr.js" />
     <Content Include="my_complaints.aspx" />
+    <Content Include="track_complaint.aspx" />
+    <Content Include="view_complaint.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -177,6 +179,20 @@
     </Compile>
     <Compile Include="my_complaints.aspx.vb">
       <DependentUpon>my_complaints.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="track_complaint.aspx.designer.vb">
+      <DependentUpon>track_complaint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="track_complaint.aspx.vb">
+      <DependentUpon>track_complaint.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="view_complaint.aspx.designer.vb">
+      <DependentUpon>view_complaint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view_complaint.aspx.vb">
+      <DependentUpon>view_complaint.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
