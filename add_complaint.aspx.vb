@@ -171,13 +171,20 @@ Public Class add_complaint
                                     ofc_phone = IIf(String.IsNullOrEmpty(txtOfcNo.Value), SqlString.Null, txtOfcNo.Value.Trim())
                                     res_phone = IIf(String.IsNullOrEmpty(txtResNo.Value), SqlString.Null, txtResNo.Value.Trim())
                                     mobile_no = IIf(String.IsNullOrEmpty(txtMobileNo.Value), SqlString.Null, txtMobileNo.Value.Trim())
-                                    complaint_desc = IIf(String.IsNullOrEmpty(txtComplaint.Value), SqlString.Null, txtComplaint.Value.Trim())
+                                    complaint_desc = IIf(String.IsNullOrEmpty(txtComplaint.Value), ddlSubCategory.SelectedItem.Text, txtComplaint.Value.Trim())
                                     sector = IIf(String.IsNullOrEmpty(txtSector.Text.Trim()), SqlString.Null, txtSector.Text.Trim())
                                     quarter = IIf(String.IsNullOrEmpty(txtQuarter.Text.Trim()), SqlString.Null, txtQuarter.Text.Trim())
                                     pb_no = IIf(ddlPublicBuilding.SelectedIndex > 0, ddlPublicBuilding.SelectedValue, SqlString.Null)
                                     Dim cc As CommonClass = New CommonClass()
-                                    cc.Insert_Complaint(empno, name, service_no, service_cat_no, complaint_desc, status, area_type, sector, quarter, quarter_public, pb_no, mobile_no, ofc_phone, res_phone)
-                                    ScriptManager.RegisterStartupScript(Me, Page.[GetType](), DateTime.Now.Ticks.ToString(), "alert('Your Complaint Added Successfully!!');window.location.href='add_complaint.aspx'", True)
+                                    Dim str(2) As String
+                                    str = cc.Insert_Complaint(empno, name, service_no, service_cat_no, complaint_desc, status, area_type, sector, quarter, quarter_public, pb_no, mobile_no, ofc_phone, res_phone)
+                                    If String.IsNullOrEmpty(str(0)) Then
+                                        If IsNumeric(str(1)) Then
+                                            ScriptManager.RegisterStartupScript(Me, Page.[GetType](), DateTime.Now.Ticks.ToString(), "alert('Your Complaint No : " & str(1) & " Added Successfully!!');window.location.href='add_complaint.aspx'", True)
+                                        End If
+                                    Else
+                                        ScriptManager.RegisterStartupScript(Me, Page.[GetType](), DateTime.Now.Ticks.ToString(), "alert('Oops! Something went wrong..')", True)
+                                    End If
                                 Else
                                     Throw New Exception("Please Choose Quarters / Public Area")
                                 End If

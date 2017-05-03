@@ -52,7 +52,19 @@ Public Class CommonClass
             cmd.Parameters.Add("mobile_no", SqlDbType.VarChar).Value = mobile_no
             cmd.Parameters.Add("ofc_phone", SqlDbType.VarChar).Value = ofc_phone
             cmd.Parameters.Add("res_phone", SqlDbType.VarChar).Value = res_phone
+            cmd.Parameters.Add("error", SqlDbType.VarChar, 1000).Direction = ParameterDirection.Output
+            cmd.Parameters.Add("comp_no", SqlDbType.Int, 20).Direction = ParameterDirection.Output
             cmd.ExecuteNonQuery()
+            Dim output As String = Convert.ToString(cmd.Parameters("error").Value)
+            If String.IsNullOrEmpty(output) Then
+                Dim cc As New CommonClass()
+                output = Convert.ToString(cmd.Parameters("comp_no").Value)
+                msg(0) = String.Empty
+                msg(1) = output
+            Else
+                msg(0) = output
+                msg(1) = String.Empty
+            End If
         Catch ex As Exception
             'EntryLog("Insert Complaint Procedure " & ex.Message)
             msg(0) = ex.Message

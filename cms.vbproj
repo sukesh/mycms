@@ -121,6 +121,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\toastr.js" />
+    <Content Include="my_complaints.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -170,6 +171,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="my_complaints.aspx.designer.vb">
+      <DependentUpon>my_complaints.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="my_complaints.aspx.vb">
+      <DependentUpon>my_complaints.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

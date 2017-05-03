@@ -40,10 +40,10 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="my_complaints.aspx" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
-                               All Complaints
+                               My Complaints
                             </div>
                         </div>
                         <img src="img/portfolio/all.png" class="img-responsive" alt="List">

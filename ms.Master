@@ -21,9 +21,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -59,7 +59,10 @@
                     </li>
                     <li class="page-scroll">
                         <a href="#">Track Complaint</a>
-                    </li>                    
+                    </li> 
+                    <li class="page-scroll">
+                        <a href="my_complaints.aspx">My Complaints</a>
+                    </li>                   
                 </ul>
             </div>
 <!-- /.navbar-collapse -->
@@ -80,7 +83,7 @@
             </div>
         </footer>
         </div>
-        <!-- /.container -->        
+        <!-- /.container -->
     </div>
     </form>
 </body>
