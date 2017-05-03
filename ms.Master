@@ -55,7 +55,7 @@
                         <a href="default.aspx">Home</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#">Add Complaint</a>
+                        <a href="add_complaint.aspx">Add Complaint</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#">Track Complaint</a>

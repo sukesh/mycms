@@ -186,7 +186,7 @@
                         <div class="row control-group">
                             <div class="radio radiobuttonlist form-group col-xs-12 controls">
                                 <asp:RadioButtonList ID="rblPublicQuarter" CssClass="rbl" AutoPostBack="true" runat="server"
-                                    RepeatDirection="Vertical" required data-validation-required-message="Select Complaint Area"
+                                    RepeatDirection="Vertical" required data-validation-required-message="Select Quarters / Public Area"
                                     RepeatLayout="Table">
                                     <asp:ListItem Text="Quarter" Value="Q"></asp:ListItem>
                                     <asp:ListItem Text="Public Building" Value="P"></asp:ListItem>
@@ -216,7 +216,7 @@
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="Public_Building">
                                     Public Building</label>
-                                <asp:DropDownList runat="server" ID="ddlPublicBuilding" Style="margin-top: 20px;
+                                <asp:DropDownList runat="server" ID="ddlPublicBuilding" Style="
                                     line-height: 3em; text-transform: lowercase" required data-validation-required-message="Select Complaint Sub Category"
                                     DataTextField="TXT" DataValueField="VAL" CssClass="form-control" DataSourceID="sdPublicBuildings">
                                 </asp:DropDownList>
@@ -226,10 +226,27 @@
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="ophone">
+                                    Office Phone No</label>
+                                <input type="text" class="form-control" placeholder="Office Phone No" id="txtOfcNo" runat="server">
+                                <p class="help-block text-danger">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label for="rphone">
+                                    Residence Phone No</label>
+                                <input type="text" class="form-control" placeholder="Residence Phone No" runat="server" id="txtResNo">
+                                <p class="help-block text-danger">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="phone">
-                                    Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required
-                                    data-validation-required-message="Please enter your phone number.">
+                                    Mobile Number</label>
+                                <input type="text" class="form-control" placeholder="Mobile Number" runat="server" id="txtMobileNo">
                                 <p class="help-block text-danger">
                                 </p>
                             </div>
@@ -238,8 +255,7 @@
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label for="complaint">
                                     Complaint Details</label>
-                                <textarea rows="3" class="form-control" placeholder="Complaint" id="txtComplaint"
-                                    required data-validation-required-message="Enter Complaint Details"></textarea>
+                                <textarea rows="3" class="form-control" placeholder="Complaint" id="txtComplaint" runat="server"></textarea>
                                 <p class="help-block text-danger">
                                 </p>
                             </div>
@@ -248,9 +264,8 @@
                         <div id="success">
                         </div>
                         <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" style="font-size: 14px !important; width: 200px" class="btn btn-success btn-lg">
-                                    Add Complaint</button>
+                            <div class="form-group col-xs-12" align="center">
+                                <asp:Button runat="server" ID="btnSubmit" CssClass="btn btn-primary btn-lg" Text="Add Complaint" Style="font-size:14px !important;width:200px"/>                                
                             </div>
                         </div>
                     </div>
