@@ -6,7 +6,55 @@ cms
 </name>
 </assembly>
 <members>
-<member name="P:cms.My.MyWebExtension.Application">
+<member name="F:cms.my_complaints.sc">
+	<summary>
+sc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.my_complaints.UpdateProgress">
+	<summary>
+UpdateProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.my_complaints.modalPopup">
+	<summary>
+modalPopup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.my_complaints.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.my_complaints.rptMyComplaints">
+	<summary>
+rptMyComplaints control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:cms.my_complaints.sdMyComplaints">
+	<summary>
+sdMyComplaints control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:cms.My.MyWebExtension.Application">
 	<summary>
  Returns information about the current application.
  </summary>

@@ -213,11 +213,9 @@
                             </div>
                         </div>
                         <div runat="server" id="div_publicbuilding" visible="false" class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label for="Public_Building">
-                                    Public Building</label>
-                                <asp:DropDownList runat="server" ID="ddlPublicBuilding" Style="
-                                    line-height: 3em; text-transform: lowercase" required data-validation-required-message="Select Complaint Sub Category"
+                            <div class="form-group col-xs-12 floating-label-form-group controls">                                
+                                <asp:DropDownList runat="server" ID="ddlPublicBuilding" Style="margin-top: 20px;
+                                    line-height: 3em; text-transform: lowercase" 
                                     DataTextField="TXT" DataValueField="VAL" CssClass="form-control" DataSourceID="sdPublicBuildings">
                                 </asp:DropDownList>
                                 <p class="help-block text-danger">
