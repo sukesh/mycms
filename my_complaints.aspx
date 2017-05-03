@@ -65,6 +65,8 @@
                                     <%# Eval("comp_no") %></li>
                                 <li class="list-group-item"><b>Employee No <br/> </b>
                                     <%# Eval("empno") %></li>
+                                <li class="list-group-item"><b>Name <br/> </b>
+                                    <%# Eval("name") %></li>
                                 <li class="list-group-item"><b>Category <br/> </b>
                                     <%# Eval("service_name")%></li>
                                 <li class="list-group-item"><b>Sub-Category <br/> </b>
