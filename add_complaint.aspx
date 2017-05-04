@@ -263,7 +263,7 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-xs-12" align="center">
-                                <asp:Button runat="server" ID="btnSubmit" CssClass="btn btn-primary btn-lg" Text="Add Complaint" Style="font-size:14px !important;width:200px"/>                                
+                                <asp:Button runat="server" ID="btnSubmit" CssClass="btn btn-success btn-lg" Text="Add Complaint" Style="font-size:14px !important;width:200px"/>                                
                             </div>
                         </div>
                     </div>
